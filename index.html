@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Kachy</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Kachy N'guessan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">A propos de moi</a></li>
+          <li><a href="#comp">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Kachy N'guessan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">A propos de moi</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Compétences</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="profilpic.png" alt="Profil de Kachy" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hey, je suis</p>
+        <h1 class="title">Kachy N'guessan</h1>
+        <p class="section__text__p2">Votre future alternante informatique!</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('Nguessan_Kachy_CV.pdf')">
+                Télecharger mon CV
+            </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Me contacter
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin_icon.png"
+            alt="Mon profil linkedin"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/kachy-n-guessan-a686302a0/'"
+          />
+          <img
+            src="gitHub_icon.png"
+            alt="Mon GitHub"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">En apprendre plus</p>
+      <h1 class="title">A propos de moi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="favicon.png"
+            alt="Photo de profil"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+           <!----> <div class="details-container">
+              <img
+                src="exp.png"
+                alt="exp icon"
+                class="icon"
+              />
+              <h3>Expériences profesionnel</h3>
+              <p>Garde d’enfants
+                <br/>Membre d’un groupe danse<br/>
+                Entraineuse de gymnastique
+            </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="form.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Formations</h3>
+              <p>BUT Informatique à <a href="https://u-paris.fr/"> Paris Cité</a></a><br >Baccalauréat STI2D option SIN
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Je suis Kachy N'guessan et je suis à la recherche d'une alternance. Suite à cette première année de formations intensives à acquérir des <a href="#comp">compétences</a> fondamentales dans divers domaines de l'informatique, je me sens prête à les appliquer dans un environnement concret. C'est donc au sein de <b>votre entreprise</b>  que je veux appliquer mes connaissances et en acquérir de nouvelles. En effet, il est indispensable pour moi de lier un apprentissage fondamental solide avec une situation pratique. Pleine de motivation et d'envie d'apprendre, je me sens prête à devenir votre future alternante !
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="fleche.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#comp'"
+      />
+    </section>
+    <section id="comp">
+      <p class="section__text__p1">Découvrez mes</p>
+      <h1 class="title">Compétences</h1>
+      <div class="comp-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="comp-sub-title">Développement Logiciel</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="java_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVA</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="c_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="cpp_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="python_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PYTHON</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="unity_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unity</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="eclipse_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Eclipse</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="comp-sub-title">Développement WEB</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="html_logo.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="css_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+             
+              <article>
+                <img
+                  src="js_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              
+             
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="comp-sub-title">Gestion de données</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="sql_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="mysql_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="access_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ACCESS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="oracle_icon.webp"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Oracle</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="skill.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Modélisation MCD</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="comp-sub-title">Systèmes</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="vb_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VIRTUALBOX</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="bash _icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>BASH</h3>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="asm_icon.svg"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ASSEMBLEUR</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="comp-sub-title">Soft skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                src="figma_icon.png"
+                alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="notion_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Notion</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="mcoffice_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Office</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="canva_icon.webp"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Canva</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="chatgpt_icon.png"
+                  alt="comp icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AI Prompting</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Découvrez mes</p>
+      <h1 class="title">Projets</h1>
+      <div class="comp-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="projet_1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="comp-sub-title project-title">IHM de type borne de commande</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Kaachyyy/IHM_BorneCommande'"
+              >
+                GitHub
+              </button>
+             
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="projet_2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="comp-sub-title project-title">Installation d'un poste pour le développement
+                </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('projet_2.pdf')"
+              >
+              En savoir plus              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="projet_3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="comp-sub-title project-title">Application console: Lexicon</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Kaachyyy/Lexicon'"
+              >
+              GitHub           </button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="fleche.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Gardons</p>
+      <h1 class="title">Contact</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="mail_icon.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:kachy.nguessan@gmail.com">kachy.nguessan@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="linkedin_icon.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/kachy-n-guessan-a686302a0/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">A propos de moi</a></li>
+            <li><a href="#comp">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+   
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
